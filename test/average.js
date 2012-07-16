@@ -10,6 +10,16 @@ describe('threshold calculation', function () {
         avg.difference(3, 4).should.equal(0.25);
         avg.difference(4, 3).should.equal(0.25);
     });
+
+    it('should return 0.5 for the difference between 360 and 720', function () {
+        avg.difference(360, 720).should.equal(0.5);
+        avg.difference(720, 360).should.equal(0.5);
+    });
+
+    it('should return 1.0 for the difference between 0 and 100', function () {
+        avg.difference(0, 100).should.equal(1.0);
+        avg.difference(100, 0).should.equal(1.0);
+    });
 });
 
 describe('median filter', function () {
