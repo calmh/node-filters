@@ -1,8 +1,7 @@
-var median = require('./lib/median');
-var average = require('./lib/average');
+"use strict";
 
 module.exports = {
-    median: median,
-    average: average
+    median: require('./lib/median'),
+    average: require('./lib/average')
 };
 

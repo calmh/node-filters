@@ -1,5 +1,5 @@
 var should = require('should');
-var avg = require('../lib/average.js');
+var avg = require('../index').average;
 
 describe('threshold calculation', function () {
     it('should return 0 for identical numbers', function () {

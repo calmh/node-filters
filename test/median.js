@@ -1,5 +1,5 @@
 var should = require('should');
-var mf = require('../lib/median.js');
+var mf = require('../index').median;
 
 describe('median filter', function () {
     it('should return single element array unfiltered', function () {
