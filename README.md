@@ -55,3 +55,8 @@ console.log(average(raw, 3, 0.5));
 // => [ 2, 2.5, 3, 9, 7.5, 2 ]
 ```
 
+License
+-------
+
+Simplified BSD
+
