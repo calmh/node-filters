@@ -1,4 +1,4 @@
-filters
+filters [![build status](https://secure.travis-ci.org/calmh/node-filters.png)](http://travis-ci.org/calmh/node-filters)
 =======
 
 This module implements 1D noise reduction filters. There are currently two
