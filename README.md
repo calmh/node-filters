@@ -11,7 +11,7 @@ available:
 median
 ------
 
-``javascript
+```javascript
 median(data, windowSize)
 ```
 
@@ -32,7 +32,7 @@ console.log(median(raw));
 average
 -------
 
-``javascript
+```javascript
 average(data, windowSize, threshold)
 ```
 
