@@ -58,5 +58,5 @@ console.log(average(raw, 3, 0.5));
 License
 -------
 
-Simplified BSD
+MIT
 
