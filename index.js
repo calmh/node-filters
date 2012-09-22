@@ -2,6 +2,7 @@
 
 module.exports = {
     median: require('./lib/median'),
-    average: require('./lib/average')
+    average: require('./lib/average'),
+    aggregate: require('./lib/aggregate'),
 };
 
