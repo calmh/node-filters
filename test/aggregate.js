@@ -19,4 +19,10 @@ describe('aggregation', function () {
         var r = [[0, {min:2, max:8, sum:2+4+6+8, med:6, cnt:4}]];
         aggregate(o, function (x) { return Math.floor(x / 10); }).should.eql(r);
     });
+
+    it('should produce correct media', function () {
+        var o = [[1, 20], [3, 14], [5, 140], [7, 92]];
+        var a = aggregate(o, function (x) { return Math.floor(x / 10); });
+        a[0][1].med.should.eql(92);
+    });
 });
