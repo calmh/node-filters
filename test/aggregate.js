@@ -20,9 +20,15 @@ describe('aggregation', function () {
         aggregate(o, function (x) { return Math.floor(x / 10); }).should.eql(r);
     });
 
-    it('should produce correct media', function () {
+    it('should produce correct median', function () {
         var o = [[1, 20], [3, 14], [5, 140], [7, 92]];
         var a = aggregate(o, function (x) { return Math.floor(x / 10); });
         a[0][1].med.should.eql(92);
+    });
+
+    it('should handle negative values', function () {
+        var o = [[1, -2], [3, -4], [5, -6], [6, 0], [7, -8]];
+        var r = [[0, {min:-8, max:0, sum:-(2+4+6+8), med:-4, cnt:5}]];
+        aggregate(o, function (x) { return Math.floor(x / 10); }).should.eql(r);
     });
 });
