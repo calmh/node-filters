@@ -17,4 +17,9 @@ describe('median filter', function () {
         var f = [ 2, 3, 4, 6, 6, 2 ];
         mf(t).should.eql(f);
     });
+    it('should sort numbers', function() {
+        var t = [14, 1500, 16, 18, 19];
+        var f = [14, 16, 18, 18, 18];
+        mf(t).should.eql(f);
+    });
 });
